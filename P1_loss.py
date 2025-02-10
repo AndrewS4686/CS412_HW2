@@ -157,15 +157,14 @@ plot_loss_surface(hinge_loss, "Hinge Loss Surface")
 # Short Explanation of Each Loss Function
 # ---------------------------
 print("\nExplanation of Loss Functions:")
-print("1. Squared Loss: Penalizes errors quadratically. Sensitive to outliers. "
-      "Commonly used in regression problems with Gaussian noise.")
-print("2. Absolute Loss: Penalizes errors linearly. More robust to outliers compared to squared loss, "
-      "but may lead to less smooth gradients. Often used in robust regression.")
-print("3. Huber Loss: Combines squared and absolute losses by being quadratic for small errors "
-      "and linear for large errors. It provides a balance between sensitivity and robustness, making it "
-      "suitable when outliers are present but you still desire differentiability.")
-print("4. Logistic Loss: Measures the performance of a classifier by heavily penalizing misclassified "
+print("1. Squared Loss: An error tolerance policy that casuistries penalties in the order of the square of mistakes. Extremely sorrowful from outliers.. "
+      "It is dominantly used with regression methods afflicted by Gaussian noise.")
+print("2. Absolute Loss: Policies applying linear penalties are less sensitive to outliers when compared to the squared loss, "
+      "however, leads to rougher gradients; copular reasoning used in modern robust regression.")
+print("3. Huber Loss: Merges absolute and squareness loss by having quadratic character for small inaccuracies, and linear one for larger ones."
+      "Former is basis of logistic regression and for use in logistic exercises, it is the best match if dealing binary classes prob")
+print("4. Logistic Loss: A method which practically calculates the performance of the classifier by imposing large amounts of penalties for misclassifying errors."
       "instances. It is the basis of logistic regression and is best for binary classification tasks.")
-print("5. Hinge Loss: Commonly used with support vector machines (SVMs). It penalizes not only misclassifications "
-      "but also predictions that are correct yet lack confidence. It is ideal for margin-based classification.")
+print("5. Hinge Loss: Often applies with the support vector machines (SVM). Besides ‘missing the target’ it also penalizes ‘hitting’ it,"
+      "when prediction is correct but not confident enough. Best for those classifiers constructed with margins.")
 
